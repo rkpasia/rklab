@@ -3,8 +3,8 @@
   <channel>
     <title>RKLAB</title>
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
-    <link>http://rkpasia.github.io/rklab/</link>
-    <atom:link href="http://rkpasia.github.io/rklab/feed.xml" rel="self" type="application/rss+xml" />
+    <link>http://www.rklab.it/</link>
+    <atom:link href="http://www.rklab.it/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -27,8 +27,8 @@ print_hi(&#39;Tom&#39;)
 
 </description>
         <pubDate>Thu, 26 Jun 2014 00:00:00 +0200</pubDate>
-        <link>http://rkpasia.github.io/rklab/jekyll/update/2014/06/26/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://rkpasia.github.io/rklab/jekyll/update/2014/06/26/welcome-to-jekyll/</guid>
+        <link>http://www.rklab.it/jekyll/update/2014/06/26/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://www.rklab.it/jekyll/update/2014/06/26/welcome-to-jekyll/</guid>
       </item>
     
   </channel>
