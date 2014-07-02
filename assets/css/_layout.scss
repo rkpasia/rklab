@@ -125,6 +125,19 @@ body{
         font-family: 'Open sans', sans-serif;
         color:#555;
 
+        h2{
+          @include title-style(1.8em);
+        }
+        h3{
+          @include title-style(1.7em);
+        }
+        h4{
+          @include title-style(1.6em);
+        }
+        h5{
+          @include title-style(1.5em);
+        }
+
         p{
           margin-bottom:15px;
         }

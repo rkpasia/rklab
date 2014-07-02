@@ -12,7 +12,11 @@
             <hr></hr>
           </a>
         </li>
-        <li><a href="#">About</a></li>
+        {% for item in site.pages %}
+          {% if item.main_page %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </nav>
   </div>
