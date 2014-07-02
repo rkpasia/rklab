@@ -626,6 +626,7 @@ body {
         font-size: 35px;
         font-family: 'Gotham', sans-serif;
         font-weight: 800;
+        margin-top: 0;
         margin-bottom: 10px; }
         body #sb-site.site-article article .article-title a {
           text-decoration: none;
