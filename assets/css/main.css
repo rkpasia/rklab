@@ -660,3 +660,25 @@ body {
         body #sb-site.site-article article .article-content a {
           text-decoration: none;
           color: #4496DE; }
+    body #sb-site.site-article .article-share {
+      width: 100%;
+      height: 60px;
+      background-color: #EC4481;
+      font-family: 'Gotham light', sans-serif;
+      font-size: 20px; }
+      body #sb-site.site-article .article-share span {
+        color: white;
+        margin-left: 15px;
+        float: left;
+        line-height: 60px; }
+      body #sb-site.site-article .article-share ul {
+        display: inline-block;
+        padding: 0 20px;
+        line-height: 60px; }
+        body #sb-site.site-article .article-share ul li {
+          float: left;
+          margin-right: 20px;
+          list-style: none; }
+          body #sb-site.site-article .article-share ul li a {
+            text-decoration: none;
+            color: white; }
