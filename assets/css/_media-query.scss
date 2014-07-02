@@ -1,0 +1,84 @@
+/*==========  Mobile First Method  ==========*/
+
+  /* Custom, iPhone Retina */ 
+  @media only screen and (min-width : 320px) {
+    
+    .header-wrap{
+      line-height: 60px;
+      .site-title{
+        width:100%;
+      }
+      .site-nav{
+        width:100%;
+        float:left;
+        ul{
+          .toggle-sidebar{
+            display:block;
+          }
+          float:left;
+          li{
+            padding-right:20px;
+          }
+        }
+      }
+    }
+
+    #sb-site.site-article{
+      padding:25px 15px;
+    }
+
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (min-width : 480px) {
+
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px) {
+    
+    .header-wrap{
+      line-height: 100px;
+      .site-title{
+        width:35%;
+      }
+      .site-nav{
+        width:65%;
+        float:right;
+        ul{
+          .toggle-sidebar{
+            display:none;
+          }
+          float:right;
+          li{
+            padding-right:0px;
+            padding-left:20px;
+          }
+        }
+      }
+    }
+
+    .site-sidebar{
+      width:35%;
+      float:left;
+      display:block;
+      position:relative;
+    }
+
+    #sb-site.site-article{
+      width:65%;
+      float:right;
+      padding:25px 40px;
+    }
+
+  }
+
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px) {
+
+  }
+
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px) {
+
+  }

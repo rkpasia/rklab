@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+
+    {% include header.html %}
+    
+    <container>
+      <div class="frame wrap">
+
+        {% include sidebar.html %}
+
+        {{ content }}
+
+      </div>
+    </container>
+    {% include script.html %}
+    </body>
+</html>
