@@ -2,33 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RKLAB</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <description>Rklab è il blog nel quale puoi far crescere le tue potenzialità di web developer o di web designer. Segui i post e i video sul canale youtube di &lt;strong&gt;RKLAB&lt;/strong&gt;. </description>
     <link>http://www.rklab.it/</link>
     <atom:link href="http://www.rklab.it/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
+        <title>Il nuovo sito con Jekyll e Github</title>
+        <description>&lt;p&gt;Questo sito è molto speciale, essendo stato creato dal &lt;a href=&quot;http://www.rkpasia.github.io&quot;&gt;sottoscritto&lt;/a&gt;, uno sviluppatore, vuole essere interamente esplorabile e flessibile alle modifiche e miglioramenti che i visitatori vogliono effettuare. &lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+&lt;p&gt;Per questo motivo l’intera sorgente del sito è disponibile su &lt;a href=&quot;https://github.com/rkpasia/rklab&quot;&gt;github&lt;/a&gt;. &lt;/p&gt;
 
-&lt;pre&gt;
-&lt;code class=&quot;language-ruby&quot;&gt;
-def print_hi(name)
-  puts &quot;Hi, #{name}&quot;
-end
-print_hi(&#39;Tom&#39;)
-#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.
-&lt;/code&gt;
-&lt;/pre&gt;
+&lt;p&gt;Qui potrete scaricare e modificare il template attraverso il branch &lt;code&gt;master&lt;/code&gt;, mentre la versione &lt;strong&gt;compilata&lt;/strong&gt; si trova sul branch &lt;code&gt;gh-pages&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Perché sto parlando di versione compilata e di &lt;strong&gt;branch&lt;/strong&gt; di github?&lt;/p&gt;
 
+&lt;p&gt;Questo sito è stato sviluppato attraverso l’utilizzo del framework &lt;a href=&quot;http://www.jekyllrb.com&quot;&gt;jekyll&lt;/a&gt;. &lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll&quot;&gt;Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Il framework serve per creare interi siti, principalmente blog, con un’ampia flessibilità. 
+Il potere di jekyll è quello di compilare file scritti con l’ausilio del linguaggio di templating, &lt;em&gt;liquid&lt;/em&gt;, che restituirà pagine statiche composte unicamente da &lt;em&gt;Html&lt;/em&gt;, &lt;em&gt;Css&lt;/em&gt; e &lt;em&gt;JavaScript&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Il nostro semplice sito che non richiede grandi interazioni ne beneficerà in sicurezza e velocità, in quanto viene saltata la parte di compilazione delle pagine lato server.&lt;/p&gt;
+
+&lt;h2 id=&quot;perch-github&quot;&gt;Perché Github?&lt;/h2&gt;
+
+&lt;p&gt;Github mette a disposizione un servizio di hosting &lt;strong&gt;GRATUITO&lt;/strong&gt; , chiamato &lt;a href=&quot;http://github.io&quot;&gt;Github Pages&lt;/a&gt;, il quale permette di caricare in un &lt;strong&gt;repository&lt;/strong&gt; i file 
+che compongono il sito e visualizzarli attraverso l’url specifico fornitoci da github.&lt;/p&gt;
+
+&lt;h3 id=&quot;dominio-personale&quot;&gt;Dominio personale&lt;/h3&gt;
+
+&lt;p&gt;Non bastasse github offre la possibilità di impostare un dominio proprio al posto di quello standard offerto dal sito. Grazie a ciò questo sito può essere raggiunto anche attraverso &lt;a href=&quot;http://www.rklab.it&quot;&gt;www.rklab.it&lt;/a&gt; e non solo tramite &lt;a href=&quot;http://www.rkpasia.github.io/rklab&quot;&gt;www.rkpasia.github.io/rklab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;collaborazione&quot;&gt;Collaborazione&lt;/h2&gt;
+
+&lt;p&gt;Grazie alla completa integrazione con github voi lettori, principalmente web developer o web designer, avrete la possibilità di creare &lt;code&gt;pull request&lt;/code&gt;per implementare all’interno del sito il vostro codice o migliorare qualche imperfezione.&lt;/p&gt;
+
+&lt;h2 id=&quot;nuovi-video&quot;&gt;Nuovi video&lt;/h2&gt;
+
+&lt;p&gt;Presto rinizierò la produzione di video tutorial dove finirò la spiegazione di HTML5 e CSS. Poi passerò a cose più sofisticate. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rimanete in contatto&lt;/strong&gt;&lt;/p&gt;
 </description>
-        <pubDate>Thu, 26 Jun 2014 00:00:00 +0200</pubDate>
-        <link>http://www.rklab.it/jekyll/update/2014/06/26/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://www.rklab.it/jekyll/update/2014/06/26/welcome-to-jekyll/</guid>
+        <pubDate>Wed, 02 Jul 2014 00:00:00 +0200</pubDate>
+        <link>http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</link>
+        <guid isPermaLink="true">http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</guid>
       </item>
     
   </channel>

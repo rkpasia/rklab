@@ -623,7 +623,7 @@ body {
         color: #C4C2C2;
         margin-bottom: 10px; }
       body #sb-site.site-article article .article-title {
-        font-size: 30px;
+        font-size: 35px;
         font-family: 'Gotham', sans-serif;
         font-weight: 800;
         margin-bottom: 10px; }
@@ -634,6 +634,26 @@ body {
         font-size: 18px;
         font-family: 'Open sans', sans-serif;
         color: #555; }
+        body #sb-site.site-article article .article-content h2 {
+          font-family: 'Gotham', sans-serif;
+          font-weight: 800;
+          font-size: 1.8em;
+          margin-bottom: 10px; }
+        body #sb-site.site-article article .article-content h3 {
+          font-family: 'Gotham', sans-serif;
+          font-weight: 800;
+          font-size: 1.7em;
+          margin-bottom: 10px; }
+        body #sb-site.site-article article .article-content h4 {
+          font-family: 'Gotham', sans-serif;
+          font-weight: 800;
+          font-size: 1.6em;
+          margin-bottom: 10px; }
+        body #sb-site.site-article article .article-content h5 {
+          font-family: 'Gotham', sans-serif;
+          font-weight: 800;
+          font-size: 1.5em;
+          margin-bottom: 10px; }
         body #sb-site.site-article article .article-content p {
           margin-bottom: 15px; }
         body #sb-site.site-article article .article-content a {
