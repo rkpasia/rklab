@@ -502,7 +502,9 @@ th {
   .header-wrap {
     line-height: 60px; }
     .header-wrap .site-title {
-      width: 100%; }
+      width: 100%;
+      text-align: center;
+      margin-top: 20px; }
     .header-wrap .site-nav {
       width: 100%;
       float: left; }
@@ -514,14 +516,18 @@ th {
           padding-right: 20px; }
 
   #sb-site.site-article {
-    padding: 25px 15px; } }
+    padding: 25px 15px; }
+    #sb-site.site-article article {
+      font-size: 15px; } }
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .header-wrap {
     line-height: 100px; }
     .header-wrap .site-title {
-      width: 35%; }
+      width: 35%;
+      text-align: left;
+      margin: 0; }
     .header-wrap .site-nav {
       width: 65%;
       float: right; }
@@ -542,7 +548,9 @@ th {
   #sb-site.site-article {
     width: 65%;
     float: right;
-    padding: 25px 40px; } }
+    padding: 25px 40px; }
+    #sb-site.site-article article {
+      font-size: 18px; } }
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
 body {
@@ -553,8 +561,7 @@ body {
     body .site-header .header-wrap .site-title {
       float: left;
       font-size: 55px;
-      padding: 5px 15px;
-      margin: 0; }
+      padding: 5px 15px; }
       body .site-header .header-wrap .site-title a {
         color: white;
         text-decoration: none; }
@@ -590,7 +597,7 @@ body {
     color: white;
     padding-top: 25px;
     padding-left: 16px;
-    padding-right: 40px; }
+    padding-right: 15px; }
     body .site-sidebar .site-description {
       font-size: 16px; }
     body .site-sidebar hr {
@@ -617,13 +624,13 @@ body {
       body #sb-site.site-article article + article {
         margin-top: 20px; }
       body #sb-site.site-article article .article-meta {
-        font-size: 15px;
+        font-size: 0.8em;
         font-family: 'Open sans', sans-serif;
         font-weight: 300;
         color: #C4C2C2;
         margin-bottom: 10px; }
       body #sb-site.site-article article .article-title {
-        font-size: 35px;
+        font-size: 1.85em;
         font-family: 'Gotham', sans-serif;
         font-weight: 800;
         margin-top: 0;
@@ -632,29 +639,40 @@ body {
           text-decoration: none;
           color: #333; }
       body #sb-site.site-article article .article-content {
-        font-size: 18px;
+        font-size: 1em;
         font-family: 'Open sans', sans-serif;
         color: #555; }
         body #sb-site.site-article article .article-content h2 {
           font-family: 'Gotham', sans-serif;
           font-weight: 800;
-          font-size: 1.8em;
-          margin-bottom: 10px; }
+          font-size: 1.65em;
+          margin-bottom: 10px;
+          color: #333; }
         body #sb-site.site-article article .article-content h3 {
           font-family: 'Gotham', sans-serif;
           font-weight: 800;
-          font-size: 1.7em;
-          margin-bottom: 10px; }
+          font-size: 1.45em;
+          margin-bottom: 10px;
+          color: #333; }
         body #sb-site.site-article article .article-content h4 {
           font-family: 'Gotham', sans-serif;
           font-weight: 800;
-          font-size: 1.6em;
-          margin-bottom: 10px; }
+          font-size: 1.25em;
+          margin-bottom: 10px;
+          color: #333; }
         body #sb-site.site-article article .article-content h5 {
           font-family: 'Gotham', sans-serif;
           font-weight: 800;
-          font-size: 1.5em;
-          margin-bottom: 10px; }
+          font-size: 1.05em;
+          margin-bottom: 10px;
+          color: #333; }
+        body #sb-site.site-article article .article-content strong {
+          color: #444; }
+        body #sb-site.site-article article .article-content img {
+          display: block;
+          margin: 0 auto;
+          max-width: 100%;
+          width: auto; }
         body #sb-site.site-article article .article-content p {
           margin-bottom: 15px; }
         body #sb-site.site-article article .article-content a {
@@ -663,17 +681,16 @@ body {
     body #sb-site.site-article .article-share {
       width: 100%;
       background-color: #EC4481;
-      font-family: 'Gotham light', sans-serif;
-      font-size: 20px; }
+      font-family: 'Gotham light', sans-serif; }
       body #sb-site.site-article .article-share span {
         color: white;
         margin-left: 15px;
         float: left;
-        line-height: 60px; }
+        line-height: 45px; }
       body #sb-site.site-article .article-share ul {
         display: inline-block;
-        padding: 0 20px;
-        line-height: 60px; }
+        padding: 0 15px;
+        line-height: 45px; }
         body #sb-site.site-article .article-share ul li {
           float: left;
           margin-right: 20px;
@@ -681,3 +698,5 @@ body {
           body #sb-site.site-article .article-share ul li a {
             text-decoration: none;
             color: white; }
+    body #sb-site.site-article #disqus_thread {
+      padding: 0 15px; }
