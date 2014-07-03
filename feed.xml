@@ -7,6 +7,71 @@
     <atom:link href="http://www.rklab.it/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Sviluppa tu stesso questo sito</title>
+        <description>&lt;p&gt;Come ho già detto nell’articolo introduttivo, questo sito può essere modificato attraverso github e teoricamente attraverso uno dei vostri contributi potreste editare completamente il template che genera il blog facendogli assumere una nuova forma. &lt;strong&gt;La domanda è quindi &lt;em&gt;Come?&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;quattro-semplici-passi&quot;&gt;Quattro semplici passi&lt;/h2&gt;
+
+&lt;p&gt;Inutile dire che requisito fondamentale, e pressoché unico, per editare a piacimento questo sito è quello di avere un account di &lt;a href=&quot;https://github.com/join&quot;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;primo-passo-fork&quot;&gt;Primo passo: Fork&lt;/h3&gt;
+
+&lt;p&gt;Il primo step da compiere è quello di visitare il repository dove è contenuto il &lt;a href=&quot;https://github.com/rkpasia/rklab&quot;&gt;template&lt;/a&gt; del blog. &lt;/p&gt;
+
+&lt;p&gt;Caricata la pagina, basterà cliccare il pulsante &lt;strong&gt;Fork&lt;/strong&gt; che si trova in alto a destra della pagina.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rklab.it/assets/img/fork.png&quot; alt=&quot;Fork repository rklab&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Premendo il pulsante creerete un vostro nuovo repository direttamente collegato a quello del template del blog. 
+All’interno saranno già presenti tutti i file che compongono il template.&lt;/p&gt;
+
+&lt;h4 id=&quot;il-branch-master&quot;&gt;Il branch master&lt;/h4&gt;
+
+&lt;p&gt;All’interno di questo branch sono contenuti tutti i file che compongono il template del blog.&lt;/p&gt;
+
+&lt;h4 id=&quot;il-branch-gh-pages&quot;&gt;Il branch gh-pages&lt;/h4&gt;
+
+&lt;p&gt;All’interno di questo branch sono contenuti i file compilati attraverso l’utilizzo di &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;secondo-passo-clone&quot;&gt;Secondo passo: Clone&lt;/h3&gt;
+
+&lt;p&gt;Per scaricare sul vostro computer i file del repository che avete appena &lt;em&gt;forkato&lt;/em&gt; dovete clonare il repository stesso.&lt;/p&gt;
+
+&lt;p&gt;Per farlo potete copiare l’url del repository ed eseguire il comando &lt;code&gt;git clone &amp;lt;url del repository&amp;gt;&lt;/code&gt;, clonare attraverso l’applicazione di github o fare il download dei file .zip.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.rklab.it/assets/img/clone.png&quot; alt=&quot;clone repository rklab&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;terzo-passo-edit&quot;&gt;Terzo passo: Edit&lt;/h3&gt;
+
+&lt;p&gt;Quando avrete clonato in una cartella sul vostro computer il repository, potrete iniziare a modificare a vostro piacimento il template del blog. &lt;/p&gt;
+
+&lt;p&gt;Per editare ed utilizzare il template sarà necessario conoscere come utilizzare Jekyll e Sass.&lt;/p&gt;
+
+&lt;p&gt;Finite le modifiche fate un &lt;strong&gt;commit&lt;/strong&gt; di esse e il &lt;strong&gt;push&lt;/strong&gt; nel repository sul server di github.&lt;/p&gt;
+
+&lt;h3 id=&quot;quarto-ed-ultimo-passo-pull-request&quot;&gt;Quarto ed ultimo passo: Pull request&lt;/h3&gt;
+
+&lt;p&gt;Nella pagina del repository &lt;a href=&quot;http://www.github.com/rkpasia/rklab/&quot;&gt;originale&lt;/a&gt; andate nella sezione &lt;strong&gt;pull request&lt;/strong&gt; e create una nuova pull request. &lt;/p&gt;
+
+&lt;p&gt;Dovete comparare il vostro repository che avete forkato e modificato (&lt;em&gt;nel branch master&lt;/em&gt;) con quello originale, ovvero &lt;em&gt;rkpasia/rklab&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Selezionata la sorgente originale e la sorgente modificata github visualizzerà tutte le modifiche che avete effettuato al template. &lt;/p&gt;
+
+&lt;p&gt;Premete il pulsante &lt;em&gt;create pull request&lt;/em&gt; ed il gioco è fatto.&lt;/p&gt;
+
+&lt;h2 id=&quot;accettare-pull-request&quot;&gt;Accettare Pull request&lt;/h2&gt;
+
+&lt;p&gt;Qui entrerò in gioco io, che potrò visualizzare i cambiamenti che avete effettuato e valutare se sono positivi o negativi per il bene del blog. &lt;/p&gt;
+
+&lt;p&gt;Se saranno accettate le modifiche il vostro codice entrerà a fare parte del template che genera il sito e le modifiche verranno applicate online.&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 03 Jul 2014 00:00:00 +0200</pubDate>
+        <link>http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/</link>
+        <guid isPermaLink="true">http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/</guid>
+      </item>
+    
+      <item>
         <title>Il nuovo sito con Jekyll e Github</title>
         <description>&lt;p&gt;Questo sito è molto speciale, essendo stato creato dal &lt;a href=&quot;http://www.rkpasia.github.io&quot;&gt;sottoscritto&lt;/a&gt;, uno sviluppatore, vuole essere interamente esplorabile e flessibile alle modifiche e miglioramenti che i visitatori vogliono effettuare. &lt;/p&gt;
 

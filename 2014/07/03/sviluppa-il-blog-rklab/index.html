@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Il nuovo sito con Jekyll e Github</title>
+    <title>Sviluppa tu stesso questo sito</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rklab è il blog nel quale puoi far crescere le tue potenzialità di web developer o di web designer. Segui i post e i video sul canale youtube di <strong>RKLAB</strong>. ">
-    <link rel="canonical" href="http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/">
+    <link rel="canonical" href="http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="http://www.rklab.it/assets/css/main.css">
@@ -124,53 +124,75 @@
         <div id="sb-site" class="site-article">
 
   <article>
-    <p class="article-meta">2 July 2014 </p>
-    <h1 class="article-title">Il nuovo sito con Jekyll e Github</h1>
+    <p class="article-meta">3 July 2014 </p>
+    <h1 class="article-title">Sviluppa tu stesso questo sito</h1>
     <section class="article-content">
-      <p>Questo sito è molto speciale, essendo stato creato dal <a href="http://www.rkpasia.github.io">sottoscritto</a>, uno sviluppatore, vuole essere interamente esplorabile e flessibile alle modifiche e miglioramenti che i visitatori vogliono effettuare. </p>
+      <p>Come ho già detto nell’articolo introduttivo, questo sito può essere modificato attraverso github e teoricamente attraverso uno dei vostri contributi potreste editare completamente il template che genera il blog facendogli assumere una nuova forma. <strong>La domanda è quindi <em>Come?</em></strong></p>
 
-<p>Per questo motivo l’intera sorgente del sito è disponibile su <a href="https://github.com/rkpasia/rklab">github</a>. </p>
+<h2 id="quattro-semplici-passi">Quattro semplici passi</h2>
 
-<p>Qui potrete scaricare e modificare il template attraverso il branch <code>master</code>, mentre la versione <strong>compilata</strong> si trova sul branch <code>gh-pages</code>.</p>
+<p>Inutile dire che requisito fondamentale, e pressoché unico, per editare a piacimento questo sito è quello di avere un account di <a href="https://github.com/join">Github</a>.</p>
 
-<p>Perché sto parlando di versione compilata e di <strong>branch</strong> di github?</p>
+<h3 id="primo-passo-fork">Primo passo: Fork</h3>
 
-<p>Questo sito è stato sviluppato attraverso l’utilizzo del framework <a href="http://www.jekyllrb.com">jekyll</a>. </p>
+<p>Il primo step da compiere è quello di visitare il repository dove è contenuto il <a href="https://github.com/rkpasia/rklab">template</a> del blog. </p>
 
-<h2 id="jekyll">Jekyll</h2>
+<p>Caricata la pagina, basterà cliccare il pulsante <strong>Fork</strong> che si trova in alto a destra della pagina.</p>
 
-<p>Il framework serve per creare interi siti, principalmente blog, con un’ampia flessibilità. 
-Il potere di jekyll è quello di compilare file scritti con l’ausilio del linguaggio di templating, <em>liquid</em>, che restituirà pagine statiche composte unicamente da <em>Html</em>, <em>Css</em> e <em>JavaScript</em>.</p>
+<p><img src="http://www.rklab.it/assets/img/fork.png" alt="Fork repository rklab" /></p>
 
-<p>Il nostro semplice sito che non richiede grandi interazioni ne beneficerà in sicurezza e velocità, in quanto viene saltata la parte di compilazione delle pagine lato server.</p>
+<p>Premendo il pulsante creerete un vostro nuovo repository direttamente collegato a quello del template del blog. 
+All’interno saranno già presenti tutti i file che compongono il template.</p>
 
-<h2 id="perch-github">Perché Github?</h2>
+<h4 id="il-branch-master">Il branch master</h4>
 
-<p>Github mette a disposizione un servizio di hosting <strong>GRATUITO</strong> , chiamato <a href="http://github.io">Github Pages</a>, il quale permette di caricare in un <strong>repository</strong> i file 
-che compongono il sito e visualizzarli attraverso l’url specifico fornitoci da github.</p>
+<p>All’interno di questo branch sono contenuti tutti i file che compongono il template del blog.</p>
 
-<h3 id="dominio-personale">Dominio personale</h3>
+<h4 id="il-branch-gh-pages">Il branch gh-pages</h4>
 
-<p>Non bastasse github offre la possibilità di impostare un dominio proprio al posto di quello standard offerto dal sito. Grazie a ciò questo sito può essere raggiunto anche attraverso <a href="http://www.rklab.it">www.rklab.it</a> e non solo tramite <a href="http://www.rkpasia.github.io/rklab">www.rkpasia.github.io/rklab</a>.</p>
+<p>All’interno di questo branch sono contenuti i file compilati attraverso l’utilizzo di <a href="http://jekyllrb.com">Jekyll</a></p>
 
-<h2 id="collaborazione">Collaborazione</h2>
+<h3 id="secondo-passo-clone">Secondo passo: Clone</h3>
 
-<p>Grazie alla completa integrazione con github voi lettori, principalmente web developer o web designer, avrete la possibilità di creare <code>pull request</code>per implementare all’interno del sito il vostro codice o migliorare qualche imperfezione.</p>
+<p>Per scaricare sul vostro computer i file del repository che avete appena <em>forkato</em> dovete clonare il repository stesso.</p>
 
-<h2 id="nuovi-video">Nuovi video</h2>
+<p>Per farlo potete copiare l’url del repository ed eseguire il comando <code>git clone &lt;url del repository&gt;</code>, clonare attraverso l’applicazione di github o fare il download dei file .zip.</p>
 
-<p>Presto rinizierò la produzione di video tutorial dove finirò la spiegazione di HTML5 e CSS. Poi passerò a cose più sofisticate. </p>
+<p><img src="http://www.rklab.it/assets/img/clone.png" alt="clone repository rklab" /></p>
 
-<p><strong>Rimanete in contatto</strong></p>
+<h3 id="terzo-passo-edit">Terzo passo: Edit</h3>
+
+<p>Quando avrete clonato in una cartella sul vostro computer il repository, potrete iniziare a modificare a vostro piacimento il template del blog. </p>
+
+<p>Per editare ed utilizzare il template sarà necessario conoscere come utilizzare Jekyll e Sass.</p>
+
+<p>Finite le modifiche fate un <strong>commit</strong> di esse e il <strong>push</strong> nel repository sul server di github.</p>
+
+<h3 id="quarto-ed-ultimo-passo-pull-request">Quarto ed ultimo passo: Pull request</h3>
+
+<p>Nella pagina del repository <a href="http://www.github.com/rkpasia/rklab/">originale</a> andate nella sezione <strong>pull request</strong> e create una nuova pull request. </p>
+
+<p>Dovete comparare il vostro repository che avete forkato e modificato (<em>nel branch master</em>) con quello originale, ovvero <em>rkpasia/rklab</em>.</p>
+
+<p>Selezionata la sorgente originale e la sorgente modificata github visualizzerà tutte le modifiche che avete effettuato al template. </p>
+
+<p>Premete il pulsante <em>create pull request</em> ed il gioco è fatto.</p>
+
+<h2 id="accettare-pull-request">Accettare Pull request</h2>
+
+<p>Qui entrerò in gioco io, che potrò visualizzare i cambiamenti che avete effettuato e valutare se sono positivi o negativi per il bene del blog. </p>
+
+<p>Se saranno accettate le modifiche il vostro codice entrerà a fare parte del template che genera il sito e le modifiche verranno applicate online.</p>
+
 
     </section>
   </article>
   <section class="article-share">
     <span>Condividi:</span>
     <ul>
-      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/&display=popup&appId=656373374447432">Facebook</a></li>
-      <li><a href="http://www.twitter.com/intent/tweet?url=http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/&text=Nuovo sito rklab online! Sviluppato con Jekyll">Twitter</a></li>
-      <li><a href="https://plus.google.com/share?url=http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/">Google+</a></li>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/&display=popup&appId=656373374447432">Facebook</a></li>
+      <li><a href="http://www.twitter.com/intent/tweet?url=http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/&text=Modifica tu stesso il template del blog rklab!">Twitter</a></li>
+      <li><a href="https://plus.google.com/share?url=http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/">Google+</a></li>
     </ul>
   </section>
 </div>
