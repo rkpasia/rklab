@@ -518,8 +518,15 @@ th {
   #sb-site.site-article {
     padding: 25px 15px; }
     #sb-site.site-article article {
-      font-size: 15px; } }
+      font-size: 14px; } }
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  #sb-site.site-article {
+    width: 65%;
+    float: right;
+    padding: 25px 40px; }
+    #sb-site.site-article article {
+      font-size: 16px; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .header-wrap {
