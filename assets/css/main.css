@@ -499,21 +499,23 @@ th {
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  .header-wrap {
-    line-height: 60px; }
-    .header-wrap .site-title {
-      width: 100%;
-      text-align: center;
-      margin-top: 20px; }
-    .header-wrap .site-nav {
-      width: 100%;
+  .header-wrap .site-title {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 40px; }
+  .header-wrap .site-nav {
+    line-height: 20px;
+    width: 100%;
+    float: left; }
+    .header-wrap .site-nav ul {
       float: left; }
-      .header-wrap .site-nav ul {
-        float: left; }
-        .header-wrap .site-nav ul .toggle-sidebar {
-          display: block; }
-        .header-wrap .site-nav ul li {
-          padding-right: 20px; }
+      .header-wrap .site-nav ul .toggle-sidebar {
+        display: block; }
+      .header-wrap .site-nav ul li {
+        padding-right: 20px; }
+        .header-wrap .site-nav ul li a {
+          font-size: 16px; }
 
   #sb-site.site-article {
     padding: 25px 15px; }
@@ -521,9 +523,13 @@ th {
       font-size: 14px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 480px) {
+  .header-wrap .site-title {
+    font-size: 50px; }
+  .header-wrap .site-nav ul li a {
+    font-size: 20px; }
+
   #sb-site.site-article {
-    width: 65%;
-    float: right;
+    width: 100%;
     padding: 25px 40px; }
     #sb-site.site-article article {
       font-size: 16px; } }
@@ -537,7 +543,8 @@ th {
       margin: 0; }
     .header-wrap .site-nav {
       width: 65%;
-      float: right; }
+      float: right;
+      line-height: 0; }
       .header-wrap .site-nav ul {
         float: right; }
         .header-wrap .site-nav ul .toggle-sidebar {
@@ -567,8 +574,7 @@ body {
     font-family: 'Gotham', sans-serif; }
     body .site-header .header-wrap .site-title {
       float: left;
-      font-size: 55px;
-      padding: 5px 15px; }
+      padding-left: 15px; }
       body .site-header .header-wrap .site-title a {
         color: white;
         text-decoration: none; }
@@ -579,22 +585,19 @@ body {
       padding: 5px 15px;
       padding-right: 40px;
       font-family: 'Gotham light', sans-serif; }
-      body .site-header .header-wrap .site-nav ul .toggle-sidebar {
-        margin-top: 20px; }
-        body .site-header .header-wrap .site-nav ul .toggle-sidebar hr {
-          width: 20px;
-          border: 0;
-          border-radius: 2px;
-          background-color: white;
-          height: 3px;
-          margin: 0;
-          padding: 0;
-          margin-bottom: 4px; }
+      body .site-header .header-wrap .site-nav ul .toggle-sidebar hr {
+        width: 20px;
+        border: 0;
+        border-radius: 2px;
+        background-color: white;
+        height: 3px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 4px; }
       body .site-header .header-wrap .site-nav ul li {
         float: left;
         list-style-type: none; }
         body .site-header .header-wrap .site-nav ul li a {
-          font-size: 20px;
           text-decoration: none;
           color: white; }
   body .site-sidebar {

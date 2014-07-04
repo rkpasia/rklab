@@ -3,8 +3,8 @@
   <channel>
     <title>RKLAB</title>
     <description>Rklab è il blog nel quale puoi far crescere le tue potenzialità di web developer o di web designer. Segui i post e i video sul canale youtube di &lt;strong&gt;RKLAB&lt;/strong&gt;. </description>
-    <link>http://www.rklab.it/</link>
-    <atom:link href="http://www.rklab.it/feed.xml" rel="self" type="application/rss+xml" />
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
         <title>Sviluppa tu stesso questo sito</title>
@@ -67,8 +67,8 @@ All’interno saranno già presenti tutti i file che compongono il template.&lt;
 
 </description>
         <pubDate>Thu, 03 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/</link>
-        <guid isPermaLink="true">http://www.rklab.it/2014/07/03/sviluppa-il-blog-rklab/</guid>
+        <link>/2014/07/03/sviluppa-il-blog-rklab/</link>
+        <guid isPermaLink="true">/2014/07/03/sviluppa-il-blog-rklab/</guid>
       </item>
     
       <item>
@@ -110,8 +110,8 @@ che compongono il sito e visualizzarli attraverso l’url specifico fornitoci da
 &lt;p&gt;&lt;strong&gt;Rimanete in contatto&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 02 Jul 2014 00:00:00 +0200</pubDate>
-        <link>http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</link>
-        <guid isPermaLink="true">http://www.rklab.it/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</guid>
+        <link>/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</link>
+        <guid isPermaLink="true">/2014/07/02/il-nuovo-sito-con-jekyll-e-github/</guid>
       </item>
     
   </channel>
