@@ -544,7 +544,7 @@ th {
     .header-wrap .site-nav {
       width: 65%;
       float: right;
-      line-height: 0; }
+      line-height: 100px; }
       .header-wrap .site-nav ul {
         float: right; }
         .header-wrap .site-nav ul .toggle-sidebar {
