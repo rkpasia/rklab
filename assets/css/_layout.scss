@@ -7,9 +7,7 @@ body{
     .header-wrap{
       .site-title{
         float:left;
-        font-size:$site-title-size;
-        padding:5px 15px;
-        margin:0;
+        padding-left:15px;
         a{
           color:white;
           text-decoration: none;
@@ -26,7 +24,6 @@ body{
         ul{
 
           .toggle-sidebar{
-            margin-top:20px;
             hr{
               width:20px;
               border:0;
@@ -42,7 +39,6 @@ body{
             float:left;
             list-style-type: none;
             a{
-              font-size:$site-nav-size;
               text-decoration: none;
               color:white;
             }
@@ -59,7 +55,7 @@ body{
     color:white;
     padding-top:25px;
     padding-left:16px;
-    padding-right:40px;
+    padding-right:15px;
     .site-description{
       font-size:$site-description-size;
     }
@@ -113,6 +109,7 @@ body{
         font-size:$article-title-size;
         font-family: 'Gotham', sans-serif;
         font-weight: 800;
+        margin-top:0;
         margin-bottom:10px;
         a{
           text-decoration: none;
@@ -126,16 +123,27 @@ body{
         color:#555;
 
         h2{
-          @include title-style(1.8em);
+          @include title-style($article-title-size - 0.2em);
         }
         h3{
-          @include title-style(1.7em);
+          @include title-style($article-title-size - 0.4em);
         }
         h4{
-          @include title-style(1.6em);
+          @include title-style($article-title-size - 0.6em);
         }
         h5{
-          @include title-style(1.5em);
+          @include title-style($article-title-size - 0.8em);
+        }
+
+        strong{
+          color:#444;
+        }
+
+        img{
+          display:block;
+          margin:0 auto;
+          max-width:100%;
+          width:auto;
         }
 
         p{
@@ -146,6 +154,35 @@ body{
           color: #4496DE;
         }
       }
+    }
+
+    .article-share{
+      width:100%;
+      background-color:#EC4481;
+      font-family: 'Gotham light', sans-serif;
+      span{
+        color:white;
+        margin-left:15px;
+        float:left;
+        line-height:45px;
+      }
+      ul{
+        display:inline-block;
+        padding:0 15px;
+        line-height:45px;
+        li{
+          float:left;
+          margin-right:20px;
+          list-style: none;
+          a{
+            text-decoration: none;
+            color:white;
+          }
+        }
+      }
+    }
+    #disqus_thread{
+      padding:0 15px;
     }
   }
 

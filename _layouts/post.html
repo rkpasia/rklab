@@ -10,5 +10,13 @@ layout: default
       {{ content }}
     </section>
   </article>
-
+  <section class="article-share">
+    <span>Condividi:</span>
+    <ul>
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.rklab.it{{ page.url }}&display=popup&appId=656373374447432">Facebook</a></li>
+      <li><a href="http://www.twitter.com/intent/tweet?url=http://www.rklab.it{{ page.url }}&text={{ page.description }}">Twitter</a></li>
+      <li><a href="https://plus.google.com/share?url=http://www.rklab.it{{ page.url }}">Google+</a></li>
+    </ul>
+  </section>
+  <div id="disqus_thread"></div>
 </div>

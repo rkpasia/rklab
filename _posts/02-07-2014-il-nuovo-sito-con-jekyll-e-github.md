@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Il nuovo sito con Jekyll e Github
+description: Nuovo sito rklab online! Sviluppato con Jekyll
 ---
 
 Questo sito è molto speciale, essendo stato creato dal [sottoscritto](http://www.rkpasia.github.io), uno sviluppatore, vuole essere interamente esplorabile e flessibile alle modifiche e miglioramenti che i visitatori vogliono effettuare. 
