@@ -3,7 +3,7 @@ title: RKLAB
 email: riccardo.pasianotto@gmail.com
 description: "Rklab è il blog nel quale puoi far crescere le tue potenzialità di web developer o di web designer. Segui i post e i video sul canale youtube di <strong>RKLAB</strong>. "
 baseurl: ""
-url: "http://www.rklab.it"
+url: ""
 
 # Build settings
 markdown: kramdown

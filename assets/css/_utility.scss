@@ -3,9 +3,28 @@
 }
 
 @mixin title-style($font-size){
-  font-family: 'Gotham', sans-serif;
+  //font-family: 'Gotham', sans-serif;
   font-weight: 800;
   font-size: $font-size;
-  margin-bottom:10px;
+  margin-top:20px;
+  margin-bottom:20px;
   color:#333;
+}
+
+@mixin bp($point) {
+
+  $small: "(max-width: 460px)";
+  $medium: "(max-width: 856px)";
+  $big: "(max-width: 1000px)";
+
+  @if $point == big {
+    @media #{$big} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$medium} { @content; }
+  }
+  @else if $point == small {
+    @media #{$small}  { @content; }
+  }
+
 }

@@ -5,8 +5,6 @@
 
     .header-wrap{
       .site-title{
-        width:100%;
-        text-align: center;
         margin:15px 0;
         font-size:40px;
       }
@@ -29,7 +27,7 @@
       }
     }
 
-    #sb-site.site-article{
+    .site-article{
       padding:25px 15px;
       article{
         font-size: 14px;
@@ -56,9 +54,8 @@
       }
     }
 
-    #sb-site.site-article{
+    .site-article{
       width:100%;
-      padding:25px 40px;
       article{
         font-size:16px;
       }
@@ -72,8 +69,7 @@
     .header-wrap{
       line-height: 100px;
       .site-title{
-        width:35%;
-        text-align: left;
+        text-align: center;
         margin:0;
       }
       .site-nav{
@@ -94,16 +90,16 @@
     }
 
     .site-sidebar{
-      width:35%;
+      width:20%;
       float:left;
       display:block;
       position:relative;
     }
 
-    #sb-site.site-article{
-      width:65%;
+    .site-article{
+      width:80%;
       float:right;
-      padding:25px 40px;
+      padding:55px 55px;
 
       article{
         font-size:18px;

@@ -2,15 +2,15 @@
 layout: default
 ---
 
-<div id="sb-site" class="site-article">
+<div class="site-article">
 
   {% for post in site.posts %}
 
   <article>
-    <p class="article-meta">{{ post.date | date: "%-d %B %Y " }}</p>
     <h2 class="article-title">
       <a href="{{ post.url | prepend: site.baseurl | prepend: site.url }}">{{ post.title }}</a>
     </h2>
+    <p class="article-meta">{{ post.date | date: "%-d %B %Y " }}</p>
     <section class="article-content">{{ post.excerpt }}</section>
   </article>
 

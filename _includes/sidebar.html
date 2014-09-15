@@ -1,6 +1,13 @@
-<aside class="site-sidebar sb-slidebar sb-left">
-  <p class="site-description">{{ site.description }}</p>
-  <hr></hr>
+<aside class="site-sidebar">
+  <nav class="site-nav">
+    <ul>
+      {% for item in site.pages %}
+        {% if item.main_page %}
+          <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
   <nav class="site-footer">
     <ul>
       <li>

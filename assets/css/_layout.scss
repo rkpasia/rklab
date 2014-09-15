@@ -1,183 +1,194 @@
 body{
-  background-color: $body-bg-color;
+ //background-color: $body-bg-color;
+ background-image: linear-gradient(to right, $body-bg-color, darken($body-bg-color, 15) 25%);
 
   .site-header {
     background-color: $header-bg-color;
-    font-family: 'Gotham', sans-serif;
+    height: 200px;
+    @include bp(medium) {
+      height:100px;
+    }
     .header-wrap{
+      line-height: 100px;
+
       .site-title{
+        text-align: center;
         float:left;
-        padding-left:15px;
-        a{
-          color:white;
-          text-decoration: none;
-          .light{
-            font-size:0.60em;
-            color:#1EF2D6;
-          }
+        width:20%;
+        margin:0;
+        margin-top:50px;
+        @include bp(medium) {
+          margin-top:0;
+          padding-left:40px;
+        }
+        @include bp(small){
+          padding-left:15px;
         }
       }
-      .site-nav{
-        padding:5px 15px;
-        padding-right:40px;
-        font-family: 'Gotham light', sans-serif;
-        ul{
 
-          .toggle-sidebar{
-            hr{
-              width:20px;
-              border:0;
-              border-radius:2px;
-              background-color:white;
-              height:3px;
-              margin:0;
-              padding:0;
-              margin-bottom:4px;
-            }
-          }
-          li{
-            float:left;
-            list-style-type: none;
-            a{
-              text-decoration: none;
-              color:white;
-            }
-          }
+      .site-headline{
+        float:left;
+        margin-left:55px;
+        @include bp(small){
+          margin-left:10px;
         }
       }
     }
   }
 
   .site-sidebar{
-    font-family: 'Open sans', sans-serif;
-    font-weight: 300;
-    background-color:$sidebar-bg-color;
-    color:white;
     padding-top:25px;
-    padding-left:16px;
-    padding-right:15px;
-    .site-description{
-      font-size:$site-description-size;
+    width:20%;
+    float:left;
+    display:block;
+    position:relative;
+
+    @include bp(medium) {
+      width:100%;
+      padding: 0 40px;
+      background-color:darken($body-bg-color, 15);
     }
-    hr{
-      height:2px;
-      background-color:white;
-      border:0;
-      margin:20px 0;
+    @include bp(small) {
+      padding: 0 15px;
     }
+
+
+    .site-nav ul{
+      margin-bottom: 15px;
+      @include bp(medium) {
+        margin-bottom:0;
+        float:left;
+      }
+    }
+
+    .site-nav ul li {
+      padding-right:20px;
+      border-bottom: 1px solid $body-bg-color;
+      height:60px;
+      &:first-of-type {
+        border-top: 1px solid $body-bg-color;
+      }
+      @include bp(medium) {
+        border-bottom:0;
+        padding: 0 10px;
+
+        &:first-of-type{
+          border-top:0;
+        }
+      }
+      @include bp(small) {
+        height:30px;
+      }
+    }
+
+    .site-nav ul li:hover{
+      background-image: linear-gradient(to right, $body-bg-color, $header-bg-color);
+      @include bp(medium) {
+        background-image: linear-gradient(to bottom, darken($body-bg-color, 15) 5%, $header-bg-color, darken($body-bg-color, 15) 95%);
+      }
+    }
+
     .site-footer{
+      float:right;
       ul{
         li{
           float:left;
           margin-right:20px;
+          @include bp(big) {
+            margin-right:15px;
+          }
+          @include bp(medium) {
+            margin-right:20px;
+          }
           .icon{
             position:relative;
+            display:block;
+            @include bp(medium) {
+              margin-top:15px;
+            }
+            @include bp(small) {
+              margin-top:0;
+            }
             svg{
               width:30px;
               height:30px;
+              @include bp(big) {
+                width:25px;
+              }
+              @include bp(medium) {
+                width:20px;
+              }
+              @include bp(small) {
+                width:15px;
+              }
             }
             svg path{
               fill:white;
             }
           }
-          list-style-type: none;
+
+          @include bp(medium) {
+            &:last-of-type {
+              margin-right:0;
+            }
+          }
         }
       }
     }
   }
-  
-  #sb-site.site-article{
+
+  .site-article{
     background-color:$articles-bg-color;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+    margin-top:-100px;
+    width:80%;
+    float:right;
+    padding:55px 55px;
+
+    @include bp(medium) {
+      width:100%;
+      margin-top:0;
+      padding: 55px 40px;
+    }
+    @include bp(small) {
+      padding: 25px 15px;
+    }
 
     article{
       background-color:$article-bg-color;
-      padding: 15px;
 
       & + article{
-        margin-top:20px;
+        margin-top:55px;
       }
 
       .article-meta{
-        font-size:$article-meta-size;
-        font-family: 'Open sans', sans-serif;
-        font-weight: 300;
-        color: #C4C2C2;
         margin-bottom:10px;
       }
 
       .article-title{
-        font-size:$article-title-size;
-        font-family: 'Gotham', sans-serif;
-        font-weight: 800;
         margin-top:0;
-        margin-bottom:10px;
-        a{
-          text-decoration: none;
-          color: #333;
-        }
+        margin-bottom:5px;
       }
 
       .article-content{
-        font-size:$article-content-size;
-        font-family: 'Open sans', sans-serif;
-        color:#555;
-
-        h2{
-          @include title-style($article-title-size - 0.2em);
-        }
-        h3{
-          @include title-style($article-title-size - 0.4em);
-        }
-        h4{
-          @include title-style($article-title-size - 0.6em);
-        }
-        h5{
-          @include title-style($article-title-size - 0.8em);
-        }
-
-        strong{
-          color:#444;
-        }
-
-        img{
-          display:block;
-          margin:0 auto;
-          max-width:100%;
-          width:auto;
-        }
-
-        p{
-          margin-bottom:15px;
-        }
-        a{
-          text-decoration: none;
-          color: #4496DE;
-        }
+        margin-top:20px;
       }
     }
 
     .article-share{
       width:100%;
       background-color:#EC4481;
-      font-family: 'Gotham light', sans-serif;
+      margin-top: 40px;
       span{
-        color:white;
         margin-left:15px;
         float:left;
-        line-height:45px;
       }
       ul{
         display:inline-block;
         padding:0 15px;
-        line-height:45px;
         li{
           float:left;
           margin-right:20px;
-          list-style: none;
-          a{
-            text-decoration: none;
-            color:white;
-          }
         }
       }
     }

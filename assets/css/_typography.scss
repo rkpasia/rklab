@@ -1,0 +1,140 @@
+body{
+  font-size: 100%;
+}
+
+.site-title{
+  text-align:center;
+  font-size:90px;
+  @include bp(medium) {
+    font-size:50px;
+  }
+  @include bp(small){
+    font-size:30px;
+  }
+}
+
+.site-title a{
+  color:white;
+  text-decoration: none;
+}
+
+.site-headline{
+  color:white;
+  @include bp(medium) {
+    font-size:20px;
+  }
+  @include bp(small) {
+    font-size:13px;
+  }
+}
+
+.site-sidebar{
+  //font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  color:white;
+
+  .site-nav ul {
+    list-style-type: none;
+  }
+
+  .site-nav ul li {
+    text-align: right;
+    line-height:60px;
+    @include bp(medium) {
+      text-align:center;
+    }
+    @include bp(small) {
+      line-height:30px;
+    }
+  }
+
+  .site-nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    @include bp(small) {
+      font-size: 13px;
+    }
+  }
+
+  .site-footer ul{
+    list-style-type: none;
+  }
+
+}
+
+.article-meta{
+  font-size:$article-meta-size;
+  //font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  color: #C4C2C2;
+}
+
+.site-article {
+  font-size: $article-base-font-size;
+  @include bp(medium) {
+    font-size: $article-base-font-size / 1.14;
+  }
+  @include bp(small) {
+    font-size: $article-base-font-size / 1.35 ;
+  }
+}
+
+.article-title{
+  font-size:$article-title-size;
+  //font-family: 'Gotham', sans-serif;
+  font-weight: 800;
+  a{
+    text-decoration: none;
+    color: #333;
+  }
+}
+
+.article-content{
+  font-size:$article-content-size;
+  //font-family: 'Open sans', sans-serif;
+  color:#555;
+
+  @for $i from 2 through 5 {
+    #{h}#{$i} {
+      @include title-style($article-title-size - (0.2em * ($i - 1)));
+    }
+  }
+
+  strong{
+    color:#444;
+  }
+
+  img{
+    display:block;
+    margin:0 auto;
+    max-width:100%;
+    width:auto;
+  }
+
+  p{
+    margin-bottom:5px;
+  }
+  a{
+    text-decoration: none;
+    color: #4496DE;
+  }
+}
+
+.article-share{
+  //font-family: 'Gotham light', sans-serif;
+  span{
+    color:white;
+    line-height:45px;
+  }
+  ul{
+    line-height:45px;
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color:white;
+      }
+    }
+  }
+}

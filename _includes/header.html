@@ -1,23 +1,10 @@
 <header class="site-header">
-  <div class="frame wrap header-wrap">
+  <div class="wrap header-wrap">
     <h1 class="site-title">
-      <a href="{{ site.baseurl | prepend: site.url }}/">RK<span class="light">LAB</span></a>
+      <a href="{{ site.baseurl | prepend: site.url }}/">RK<!--<span class="light">LAB</span>--></a>
     </h1>
-    <nav class="site-nav">
-      <ul>
-        <li class="toggle-sidebar sb-toggle-left">
-          <a href="#">
-            <hr></hr>
-            <hr></hr>
-            <hr></hr>
-          </a>
-        </li>
-        {% for item in site.pages %}
-          {% if item.main_page %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-    </nav>
+    <h2 class="site-headline">
+      {{ site.data.settings.headline }}
+    </h2>
   </div>
 </header>
