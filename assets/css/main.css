@@ -564,7 +564,8 @@ body {
       background-image: linear-gradient(to right, #535050, #4985E4); }
       @media (max-width: 856px) {
         body .site-sidebar .site-nav ul li:hover {
-          background-image: linear-gradient(to bottom, #2c2a2a 5%, #4985E4, #2c2a2a 95%); } }
+          background-image: none;
+          background-color: #535050; } }
     body .site-sidebar .site-footer {
       float: right; }
       body .site-sidebar .site-footer ul li {
@@ -584,7 +585,8 @@ body {
               margin-top: 15px; } }
           @media (max-width: 460px) {
             body .site-sidebar .site-footer ul li .icon {
-              margin-top: 0; } }
+              margin-top: 0;
+              height: 30px; } }
           body .site-sidebar .site-footer ul li .icon svg {
             width: 30px;
             height: 30px; }
@@ -596,7 +598,7 @@ body {
                 width: 20px; } }
             @media (max-width: 460px) {
               body .site-sidebar .site-footer ul li .icon svg {
-                width: 15px; } }
+                width: 18px; } }
           body .site-sidebar .site-footer ul li .icon svg path {
             fill: white; }
         @media (max-width: 856px) {
@@ -655,7 +657,7 @@ body {
       font-size: 50px; } }
   @media (max-width: 460px) {
     .site-title {
-      font-size: 30px; } }
+      font-size: 40px; } }
 
 .site-title a {
   color: white;
@@ -690,7 +692,7 @@ body {
     font-size: 18px; }
     @media (max-width: 460px) {
       .site-sidebar .site-nav ul li a {
-        font-size: 13px; } }
+        font-size: 14px; } }
   .site-sidebar .site-footer ul {
     list-style-type: none; }
 
